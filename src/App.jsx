@@ -1,11 +1,11 @@
 import React from "react";
 import Home from "./pages/Home";
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
-import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Country from "./Pages/Country";
 import AppLayout from "./Components/layout/AppLayout";
 import Countrydets from "./Components/layout/Countrydets";
+import About from "./pages/About";
 
 const App = () => {
   const router = createBrowserRouter([
