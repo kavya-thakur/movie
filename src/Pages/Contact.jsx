@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen px-4">
+    <div className="flex justify-center items-center min-h-screen px-5 py-5">
       <div className="w-full max-w-lg bg-zinc-800 text-white p-8 rounded-xl shadow-lg">
         <h2 className="text-3xl font-semibold text-center mb-6">Contact Us</h2>
         <form className="flex flex-col space-y-4" onSubmit={handleFormSubmit}>

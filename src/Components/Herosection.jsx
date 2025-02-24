@@ -40,6 +40,7 @@ import React from "react";
 import { BsArrowReturnRight } from "react-icons/bs";
 import ring from "../assets/ring.png";
 import web from "../assets/web.png";
+import { NavLink } from "react-router-dom";
 
 const Herosection = () => {
   return (
@@ -52,9 +53,9 @@ const Herosection = () => {
         <p className="text-zinc-300 text-sm md:text-base">
           Discover the history, culture, and beauty of every nation. Sort, search, and filter through countries to find the details you need.
         </p>
-        <button className="bg-purple-600 text-white font-semibold px-8 py-2 rounded-lg hover:rounded-xl text-sm flex items-center gap-2 justify-center transition-all duration-150">
+        <NavLink to={`/country`} className="bg-purple-600 text-white font-semibold px-8 py-2 rounded-lg hover:rounded-xl text-sm flex items-center gap-2 justify-center transition-all duration-150">
           Start Exploring <BsArrowReturnRight />
-        </button>
+        </NavLink>
       </div>
 
       {/* 3D Images Behind Text */}

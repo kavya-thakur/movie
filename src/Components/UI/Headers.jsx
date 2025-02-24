@@ -32,7 +32,7 @@
 // export default Headers;
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { BsArrowReturnRight } from "react-icons/bs";
 import { HiMenu, HiX } from "react-icons/hi"; // Mobile menu icons
 
@@ -41,7 +41,7 @@ const Headers = () => {
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 shadow-md">
-      <nav className="bg-black mb-20 flex justify-between py-5 w-[80%] md:w-[80%] items-center mx-auto">
+      <nav className="bg-black flex justify-between px-8 sm:px-20 md:px-20 py-5 w-[100%] md:w-[100%] items-center mx-auto">
         {/* Logo */}
         <h1 className="font-semibold text-xl text-white">WorldAtlas</h1>
 
@@ -63,9 +63,9 @@ const Headers = () => {
 
         {/* CTA Button (Hidden on Mobile) */}
         <div className="hidden md:block">
-          <button className="capitalize bg-purple-600 font-semibold px-8 py-2 rounded-lg hover:rounded-xl text-sm flex items-center gap-2 justify-center hover:px-6 hover:text-zinc-200 transition">
+          <NavLink to={`/country`} className="capitalize bg-purple-600 font-semibold px-8 py-2 rounded-lg hover:rounded-xl text-sm flex items-center gap-2 justify-center hover:text-zinc-200 transition">
             Start Exploring <BsArrowReturnRight />
-          </button>
+          </NavLink>
         </div>
 
         {/* Mobile Menu Button */}
@@ -121,9 +121,9 @@ const Headers = () => {
         </Link>
 
         {/* CTA Button (Mobile) */}
-        <button className="capitalize bg-purple-600 text-white font-semibold px-8 py-2 rounded-lg hover:rounded-xl text-sm flex items-center gap-2 justify-center hover:px-6 transition">
+        <NavLink to={`/country`} className="capitalize bg-purple-600 text-white font-semibold px-8 py-2 rounded-lg hover:rounded-xl text-sm flex items-center gap-2 justify-center hover:px-6 transition">
           Start Exploring <BsArrowReturnRight />
-        </button>
+        </NavLink>
       </div>
     </header>
   );

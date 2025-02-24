@@ -235,17 +235,6 @@ html {
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
   }
 
-  & input {
-    font-family: "urbanist";
-    font-size: 1.55rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.8);
-    border: 0.05rem solid #fff;
-    background: linear-gradient(71deg, #080509, #1a171c, #080509);
-  }
-
   & .select-section {
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
     color: rgba(255, 255, 255, 0.8);
@@ -276,11 +265,4 @@ html {
     border-radius: 5rem;
     margin-top: 1rem;
   }
-}
-
-::placeholder {
-  font-size: 1.6rem;
-  letter-spacing: 0.1rem;
-  text-transform: capitalize;
-  color: rgba(255, 255, 255, 0.5);
 }

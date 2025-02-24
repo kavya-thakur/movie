@@ -10,7 +10,7 @@ const SearchFilter = ({ Search, setSearch }) => {
     <section className=" ">
       <div>
         <input 
-        className="w-1/2 rounded-full px-4 py-2 text-sm"
+        className="w-full bg-zinc-800 rounded-md outline-0 px-4 py-2 text-sm"
           type="text"
           placeholder="Search"
           value={Search}
