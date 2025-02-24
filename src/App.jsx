@@ -1,17 +1,18 @@
 import React from "react";
-import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
-import AppLayout from "./Components/layout/AppLayout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./Pages/Contact";
-import Country from "./Pages/Country";
-import Countrydets from "./Components/layout/Countrydets";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AppLayout from "./Components/layout/AppLayout"
+import Home from "./Pages/Home"
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
+import Country from "./Pages/Country"
+import Countrydets from "./Components/layout/Countrydets"
+
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <AppLayout />,
+      element : <AppLayout />,
       children: [
         {
           path: "/",
@@ -36,6 +37,7 @@ const App = () => {
       ],
     },
   ]);
+  
   return <RouterProvider router={router}></RouterProvider>;
 };
 
