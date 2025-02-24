@@ -111,7 +111,7 @@ const Countrydets = () => {
 
   return (
     <section className="flex flex-col items-center justify-center min-h-[70%] px-10 py-5 mt-20  text-white">
-      <div className="w-full max-w-4xl bg-gray-800 shadow-lg rounded-lg p-10 md:p-10">
+      <div className="w-full max-w-4xl bg-gray-800 shadow-lg rounded-lg p-10 md:p-10 lg:mt-20">
         {country && (
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             {/* Country Flag */}
